@@ -1,0 +1,32 @@
+Counting a Specific Word in a File Using FileReader
+
+To count the occurrence of a specific word in a file using FileReader, follow these steps:
+
+1. Reading the file:
+   - Use FileReader to open the file and read its content.
+   - Wrap FileReader in BufferedReader to read lines efficiently.
+
+2. Splitting text into words:
+   - Read each line using BufferedReader.
+   - Use the split() method with "\\s+" to break lines into words.
+
+3. Comparing words:
+   - Loop through the words and check if they match the target word.
+   - Use equalsIgnoreCase() to make the comparison case-insensitive.
+
+4. Counting occurrences:
+   - Maintain a counter variable.
+   - Each time the word matches, increment the counter.
+
+5. Displaying the result:
+   - After reading all lines, print the final count of the word.
+
+Example:
+
+If the file contains:
+Java is a powerful programming language.
+Many developers use Java for building applications.
+The Java community is growing every day.
+
+And if we search for the word "Java", the output will be:
+The word 'Java' appears 3 times in the file.
