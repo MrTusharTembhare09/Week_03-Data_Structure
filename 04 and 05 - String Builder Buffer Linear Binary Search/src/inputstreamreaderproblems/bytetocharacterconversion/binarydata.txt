@@ -1,0 +1,3 @@
+This is a sample text file.
+It contains some special characters: ñ, é, ü, ç, ß.
+InputStreamReader helps in converting byte streams to character streams.
