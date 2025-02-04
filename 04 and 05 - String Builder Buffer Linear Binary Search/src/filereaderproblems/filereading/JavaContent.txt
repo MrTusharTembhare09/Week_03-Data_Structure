@@ -1,0 +1,65 @@
+Java Programming Language
+
+Java is a high-level, class-based, object-oriented programming language that was designed to have as few implementation dependencies as possible. It was developed by James Gosling and Mike Sheridan at Sun Microsystems in 1991 and later acquired by Oracle Corporation.
+
+Key Concepts in Java:
+
+1. Classes and Objects:
+   - A class is a blueprint for creating objects. An object is an instance of a class.
+   - Example:
+     public class Car {
+         String model;
+         int year;
+         void startEngine() {
+             System.out.println("Engine started");
+         }
+     }
+
+2. Inheritance:
+   - Inheritance allows a new class to inherit properties and methods from an existing class.
+   - Example:
+     public class ElectricCar extends Car {
+         void chargeBattery() {
+             System.out.println("Battery charging");
+         }
+     }
+
+3. Polymorphism:
+   - Polymorphism means "many forms". It allows one object to take on many forms.
+   - Method Overloading and Method Overriding are examples of polymorphism.
+   - Example:
+     public class Animal {
+         void sound() {
+             System.out.println("Some sound");
+         }
+     }
+     public class Dog extends Animal {
+         void sound() {
+             System.out.println("Bark");
+         }
+     }
+
+4. Encapsulation:
+   - Encapsulation is the process of wrapping code and data together into a single unit, often using private variables and public methods.
+   - Example:
+     public class Person {
+         private String name;
+         public String getName() {
+             return name;
+         }
+         public void setName(String name) {
+             this.name = name;
+         }
+     }
+
+5. Abstraction:
+   - Abstraction involves hiding the complex implementation details and showing only the essential features of an object.
+   - Example:
+     abstract class Animal {
+         abstract void sound();
+     }
+     class Dog extends Animal {
+         void sound() {
+             System.out.println("Bark");
+         }
+     }
